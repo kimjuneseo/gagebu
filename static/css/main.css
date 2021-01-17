@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+img {
+    vertical-align: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo img {
+    width: 250px;
+    height: 60px;
+    z-index: 10;
+}
+
+.menu {
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 90%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login {
+    display: block;
+    z-index: 10;
+    float: right;
+    display: flex;
+    justify-content: flex-end
+}
+
+.login h3 {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+}
+
+.login a {
+    color: #fff;
+}
+
+.day {
+    position: fixed;
+    left: 13%;
+    right: 0;
+    top: 25%;
+    bottom: 0;
+    z-index: 10;
+    width: 680px;
+    height: 230px;
+    display: flex;
+    /* font-weight: 540; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.month,
+.today {
+    display: flex;
+    justify-content: space-between;
+}
+
+.today p {
+    border-bottom: 3px solid #fff;
+}
+
+.day p {
+    font-size: 70px;
+    color: #fff;
+}
+
+
+.data {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 83%;
+    bottom: 0;
+    z-index: 10;
+}
+
+.data a {
+    font-size: 35px;
+    color: #888;
+}
+
+.data a:hover,
+.data a.active {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+
+.bullet {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    top: 40%;
+}
+
+.bullet label {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    background: #fff;
+    font-size: 0;
+    margin-top: 25px;
+    transition: 0.5s;
+    margin-right: 60px;
+    border: 2px solid #666;
+}
+
+.btm1 {
+    transform: scale(1.3);
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.photos {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.photos ul {
+    width: 100%;
+    height: 400vh;
+}
+
+.photos li {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photos li:nth-child(1) {
+    background-image: url(/static/image/photo1.jpg);
+}
+
+.photos li:nth-child(2) {
+    background-image: url(/static/image/photo2.jpg);
+}
+
+.photos li:nth-child(3) {
+    background-image: url(/static/image/photo3.jpg);
+}
+
+.photos li:nth-child(4) {
+    background-image: url(/static/image/photo4.jpg);
+}

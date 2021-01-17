@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/static/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script> -->
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script src="../static/js/jquery-1.12.3.js"></script>
+    <script src="../static/js/main.js"></script>
+</head>
+
+<body>
+    <!-- <header class="site-header">
+        <div class="top">
+            <h3 class="logo">
+                <a href="#"><img src="/static/image/logo.png" alt="logo"><br>가계부</a>
+            </h3>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">b</a></li>
+                <li><a href="#">c</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+    </div>
+    <div id="chart"> -->
+    <!-- <div class="canvas_box">
+            <canvas id="myChart" width="10" height="10"></canvas>
+            <canvas id="myChart2" width="400" height="400"></canvas>
+        </div> -->
+    <!-- <div class="form">
+
+            <fieldset class="a">
+                <input type="date">
+                <br><br>
+                <form action="/sendExpend" method="POST" id="expend">
+                    <input type="text" placeholder="지출" name="expend">
+                    <select name="type" id="se">
+                        <option value="transport">교통비</option>
+                        <option value="food">식비</option>
+                        <option value="etc">기타</option>
+                    </select>
+                    <input type="submit">
+                </form>
+
+                <br><br>
+                <form action="/sendIncome" method="POST" id="income">
+                    <input type="text" placeholder="수입" name="income">
+                    <select name="type2" id="se2">
+                        <option value="Pinmoney">용돈</option>
+                        <option value="Salary">알바비</option>
+                        <option value="etc2">기타</option>
+                    </select>
+                    <input type="submit">
+                </form>
+
+            </fieldset> -->
+    <!-- </div>
+                
+            </div>
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myPieChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['교통비', '식비', '기타'],
+                        
+                        datasets: [{
+                            backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            ],
+                            label: 'My First dataset',
+                            data: [ < %= transport % > , < %= food % > , < %= etc % > ]
+                        }]
+                    }
+                })
+                var ctx2 = document.getElementById('myChart2').getContext('2d');
+                var myPieChart2 = new Chart(ctx2, {
+                    type: 'pie',
+                    data: {
+                        labels: ['용돈', '알바비', '기타'],
+                        
+                        datasets: [{
+                            backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            ],
+                            label: 'My First dataset2',
+                            data: [ < %= Pinmoney % > , < %= Salary % > , < %= etc2 % > ]
+                            
+                        }]
+                    }
+                })
+            </script> -->
+    <div class="menu">
+        <div class="logo">
+            <img src="../static/image/logo.png" alt="">
+        </div>
+        <div class="login">
+            <h3><a href="/login">로그인</a></h3>
+            <h3><a href="/join">회원가입</a></h3>
+        </div>
+    </div>
+    <div class="day">
+        <div class="month">
+            <p>이번달</p>
+            <p><%= pus.toLocaleString() %>원</p>
+        </div>
+        <div class="today">
+            <p>오늘</p>
+            <p> <%= pus.toLocaleString() %>원</p>
+        </div>
+    </div>
+    <div class="data">
+        <p><a href="../static/page.html" class="active">지출&수입</a></p>
+        <p><a href="../static/sub.html">내역</a></p>
+    </div>
+    <div class="bullet">
+        <label class="btm1">1</label>
+        <label class="btm2">2</label>
+        <label class="btm3">3</label>
+        <label class="btm4">4</label>
+    </div>
+    <nav class="photos">
+        <div class="box"></div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+    <h2>
+    </h2>
+</body>
+
+</html>
